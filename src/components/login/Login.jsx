@@ -32,7 +32,7 @@ function Login() {
 
   return (
     <div className="h-full w-full bg-gradient-to-r from-black via-indigo-900 to-purple-900 flex justify-center items-center">
-      <div className="card h-[278px] w-[300px] sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] md:ml-64 lg:h-[450px] lg:w-[550px] sm bg-gray-500 ml-40  flex flex-col justify-center items-center rounded-lg">
+      <div className="card h-[278px] w-[300px] ml-32 mr-10 sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] md:ml-64 lg:h-[450px] lg:w-[550px] sm bg-gray-500 ml-40  flex flex-col justify-center items-center rounded-lg">
         <h1 className='text-center text-black text-4xl my-2 font-serif'>Login Form</h1>
         <form onSubmit={handleSubmit(loginForm)}>
           <div className='my-3 text-center'>

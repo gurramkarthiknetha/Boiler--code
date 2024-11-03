@@ -5,17 +5,12 @@ import { FcAbout } from "react-icons/fc";
 import { TbLogin2 } from "react-icons/tb";
 import { FaRegistered } from "react-icons/fa6";
 import { IoSettings } from "react-icons/io5";
-function Slidebar({sidebartoggle}) {
+function Slidebar({sidebartoggle,setsidebartoggle}) {
   return (
-    <div className={`${sidebartoggle ? "w-[70px] mt-16" : "block"} bg-gradient-to-b from-gray-700 to-black  fixed h-full`}> 
-        <div >
-            <h1 className={`${sidebartoggle ? "hidden" : "text-2xl text-white m-4"} `} >
-                <img src="https://pngimg.com/d/google_PNG19644.png" className='bg-transparent w-[200px] ' alt="" />
-            </h1>
-        </div>
+    <div className={`${sidebartoggle ? "w-[64px] mt-[62px]" : "block mt-[62px] w-[164px]"} bg-gradient-to-b from-gray-700 to-black  fixed h-full`}> 
         
         <ul className='mt-3 text-white font-bold flex flex-col space-y-8' >
-            <li  className={`${sidebartoggle ? "hover:shadow mx-auto hover:bg-gray-400 pt-4" : "pt-4 inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
+            <li onClick={()=>setsidebartoggle(!sidebartoggle)}  className={`${sidebartoggle ? "hover:shadow mx-auto focus:text-blue-800 hover:text-red-400" : "pt-4 inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
                 <Link to='/home' >
                     <span className='flex'>
                         <span>
@@ -27,7 +22,7 @@ function Slidebar({sidebartoggle}) {
             </li>
 
 
-            <li  className={`${sidebartoggle ? "hover:shadow mx-auto hover:bg-gray-400" : "pt-3 inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
+            <li onClick={()=>setsidebartoggle(!sidebartoggle)} className={`${sidebartoggle ? "hover:shadow mx-auto focus:text-blue-800 hover:text-red-400" : "pt-3 inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
                 <Link to='about' >
                     <span className='flex'>
                         <span>
@@ -38,7 +33,7 @@ function Slidebar({sidebartoggle}) {
                 </Link>
             </li>
 
-            <li  className={`${sidebartoggle ? "hover:shadow mx-auto hover:bg-gray-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
+            <li onClick={()=>setsidebartoggle(!sidebartoggle)} className={`${sidebartoggle ? "hover:shadow mx-auto focus:text-blue-800 hover:text-red-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
                 <Link to='login' >
                     <span className='flex'>
                         <span>
@@ -50,7 +45,7 @@ function Slidebar({sidebartoggle}) {
             </li>
 
             
-            <li  className={`${sidebartoggle ? "hover:shadow mx-auto hover:bg-gray-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
+            <li onClick={()=>setsidebartoggle(!sidebartoggle)} className={`${sidebartoggle ? "hover:shadow mx-auto focus:text-blue-800 hover:text-red-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
                 <Link to='register' >
                     <span className='flex'>
                         <span>
@@ -60,7 +55,7 @@ function Slidebar({sidebartoggle}) {
                     </span>
                 </Link>
             </li>
-            <li  className={`${sidebartoggle ? "hover:shadow mx-auto hover:bg-gray-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
+            <li onClick={()=>setsidebartoggle(!sidebartoggle)} className={`${sidebartoggle ? "hover:shadow mx-auto focus:text-blue-800 hover:text-red-400" : "inline-block w-5 h-5 -mt-2 mr-2 ml-6 "} `}>
                 <Link to='settings' >
                     <span className='flex'>
                         <span>

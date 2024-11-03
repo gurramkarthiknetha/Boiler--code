@@ -5,7 +5,7 @@ import {Outlet} from 'react-router-dom'
 function Dashboard({sidebartoggle,setsidebartoggle}) {
   return (
     <div>
-     <Slidebar sidebartoggle={sidebartoggle} /> 
+     <Slidebar sidebartoggle={sidebartoggle} setsidebartoggle={setsidebartoggle}/> 
      <Navbar sidebartoggle={sidebartoggle} setsidebartoggle={setsidebartoggle}/>
      <div className="bg-red h-[100vh]">
             <Outlet/>

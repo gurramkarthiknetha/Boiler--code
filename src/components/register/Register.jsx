@@ -27,7 +27,7 @@ function submitForm(obj){
   return (
 <div className="h-full w-full bg-gradient-to-r from-black via-indigo-900 to-purple-900 flex justify-center items-center">
     
-    <div className="card !h-[578px] w-[300px] sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] md:ml-64 lg:h-[450px] lg:w-[550px] bg-gray-500 ml-40  flex flex-col justify-center items-center rounded-lg">
+    <div className="card !h-[578px] ml-24 mr-6 w-[300px] sm:h-[300px] sm:w-[350px] md:h-[400px] md:w-[500px] md:ml-64 lg:h-[450px] lg:w-[550px] bg-gray-500 ml-40  flex flex-col justify-center items-center rounded-lg">
       <h1 className='text-center text-black text-4xl my-2 font-serif'>Registration Form</h1>
         <form action="" onSubmit={handleSubmit(submitForm)}>
           <div className='my-3 text-center'>
