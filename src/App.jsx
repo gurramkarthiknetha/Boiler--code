@@ -1,5 +1,5 @@
 import './App.css'
-import Entry from '/Users/karthikgurram/assignmentsFORf/boilerplatecode/client/Basic-layout/src/components/Entry/Entry.jsx'
+import Entry from '../src/components/Entry/Entry'
 function App() {
 
   return (
